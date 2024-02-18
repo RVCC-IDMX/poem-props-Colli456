@@ -2,15 +2,35 @@
 @use "../abstracts/variables" as var;
 @use "../base/typography" as type;
 
+// body {
+//   font-family: type.$font;
+//   background-color: var.$bg-very-light;
+//   width: min(100% - 2rem, 60ch);
+//   margin-inline: auto;
+//   margin-block: 4rem;
+// }
+
+// h1 {
+//   color: var.$primary-color;
+//   text-align: center;
+// }
+
 body {
-  font-family: type.$font;
-  background-color: var.$bg-very-light;
-  width: min(100% - 2rem, 60ch);
-  margin-inline: auto;
-  margin-block: 4rem;
+  background-color: rgb(255, 0, 251);
+display: grid;
+gap: 2rem;
+width: min(100% - 2rem, 60ch);
+margin-inline: auto;
+font-family: "Charm", cursive;
+font-weight: 700;
+padding-block: 1rem;
 }
 
-h1 {
-  color: var.$primary-color;
-  text-align: center;
+.pic_title {
+font-size: var(--font-size-fluid-3);
+text-align: left;
+z-index: 1;
+padding-top: 5%;
+padding-bottom: 5%;
+height: max-content;
 }
